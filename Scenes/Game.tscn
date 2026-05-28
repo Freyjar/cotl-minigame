@@ -2,7 +2,137 @@
 
 [node name="Game" type="Node2D" unique_id=1590812212]
 
-[node name="Label" type="Label" parent="." unique_id=1525516143]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "GAME"
+[node name="Control" type="Control" parent="." unique_id=58521286]
+layout_mode = 3
+offset_right = 1155.0
+offset_bottom = 643.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayerTable" type="GridContainer" parent="Control" unique_id=1695570530]
+layout_mode = 0
+offset_left = 310.0
+offset_top = 297.0
+offset_right = 681.0
+offset_bottom = 401.0
+columns = 3
+
+[node name="Player_R1C1" type="Label" parent="Control/PlayerTable" unique_id=1942926210 groups=["Player_Col1"]]
+layout_mode = 2
+text = "P_Row1Col1"
+
+[node name="Player_R1C2" type="Label" parent="Control/PlayerTable" unique_id=1741745514 groups=["Player_Col2"]]
+layout_mode = 2
+text = "P_Row1Col2"
+
+[node name="Player_R1C3" type="Label" parent="Control/PlayerTable" unique_id=2144297219 groups=["Player_Col3"]]
+layout_mode = 2
+text = "P_Row1Col3"
+
+[node name="Player_R2C1" type="Label" parent="Control/PlayerTable" unique_id=187846301 groups=["Player_Col1"]]
+layout_mode = 2
+text = "P_Row2Col1"
+
+[node name="Player_R2C2" type="Label" parent="Control/PlayerTable" unique_id=775717516 groups=["Player_Col2"]]
+layout_mode = 2
+text = "P_Row2Col2"
+
+[node name="Player_R2C3" type="Label" parent="Control/PlayerTable" unique_id=1201529447 groups=["Player_Col3"]]
+layout_mode = 2
+text = "P_Row2Col3"
+
+[node name="Player_R3C1" type="Label" parent="Control/PlayerTable" unique_id=318855811 groups=["Player_Col1"]]
+layout_mode = 2
+text = "P_Row3Col1"
+
+[node name="Player_R3C2" type="Label" parent="Control/PlayerTable" unique_id=673777616 groups=["Player_Col2"]]
+layout_mode = 2
+text = "P_Row3Col2"
+
+[node name="Player_R3C3" type="Label" parent="Control/PlayerTable" unique_id=1845691634 groups=["Player_Col3"]]
+layout_mode = 2
+text = "P_Row3Col3"
+
+[node name="Player_Col1Total" type="Label" parent="Control/PlayerTable" unique_id=1243462711]
+layout_mode = 2
+text = "playerTotalCol1"
+
+[node name="Player_Col2Total" type="Label" parent="Control/PlayerTable" unique_id=1497432227]
+layout_mode = 2
+text = "playerTotalCol2"
+
+[node name="Player_Col3Total" type="Label" parent="Control/PlayerTable" unique_id=695367292]
+layout_mode = 2
+text = "playerTotalCol3"
+
+[node name="enemyTotal" type="Label" parent="Control" unique_id=1525516143]
+layout_mode = 0
+offset_left = 797.0
+offset_top = 95.0
+offset_right = 889.0
+offset_bottom = 118.0
+text = "enemyTotal"
+
+[node name="playerTotal" type="Label" parent="Control" unique_id=1936128398]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 462.0
+offset_right = 241.0
+offset_bottom = 485.0
+text = "player wTotal"
+
+[node name="EnemyTable" type="GridContainer" parent="Control" unique_id=897679045]
+layout_mode = 0
+offset_left = 306.0
+offset_top = 124.0
+offset_right = 687.0
+offset_bottom = 228.0
+columns = 3
+
+[node name="Enemy_Col1Total" type="Label" parent="Control/EnemyTable" unique_id=1946099429]
+layout_mode = 2
+text = "enemyTotalCol1"
+
+[node name="Enemy_Col2Total" type="Label" parent="Control/EnemyTable" unique_id=1104136480]
+layout_mode = 2
+text = "enemyTotalcol2"
+
+[node name="Enemy_Col3Total" type="Label" parent="Control/EnemyTable" unique_id=1931166156]
+layout_mode = 2
+text = "enemyTotalCol3"
+
+[node name="Enemy_R1C1" type="Label" parent="Control/EnemyTable" unique_id=632244195 groups=["Enemy_Col1"]]
+layout_mode = 2
+text = "E_Row1Col1"
+
+[node name="Enemy_R1C2" type="Label" parent="Control/EnemyTable" unique_id=1906933158 groups=["Enemy_Col2"]]
+layout_mode = 2
+text = "E_Row1Col2"
+
+[node name="Enemy_R1C3" type="Label" parent="Control/EnemyTable" unique_id=115168544 groups=["Enemy_Col3"]]
+layout_mode = 2
+text = "E_Row1Col3"
+
+[node name="Enemy_R2C1" type="Label" parent="Control/EnemyTable" unique_id=1260330724 groups=["Enemy_Col1"]]
+layout_mode = 2
+text = "E_Row2Col1"
+
+[node name="Enemy_R2C2" type="Label" parent="Control/EnemyTable" unique_id=900006731 groups=["Enemy_Col2"]]
+layout_mode = 2
+text = "E_Row2Col2"
+
+[node name="Enemy_R2C3" type="Label" parent="Control/EnemyTable" unique_id=512854369 groups=["Enemy_Col3"]]
+layout_mode = 2
+text = "E_Row2Col3"
+
+[node name="Enemy_R3C1" type="Label" parent="Control/EnemyTable" unique_id=1970146556 groups=["Enemy_Col1"]]
+layout_mode = 2
+text = "E_Row3Col1"
+
+[node name="Enemy_R3C2" type="Label" parent="Control/EnemyTable" unique_id=987294131 groups=["Enemy_Col2"]]
+layout_mode = 2
+text = "E_Row3Col2"
+
+[node name="Enemy_R3C3" type="Label" parent="Control/EnemyTable" unique_id=553691791 groups=["Enemy_Col3"]]
+layout_mode = 2
+text = "E_Row3Col3"
