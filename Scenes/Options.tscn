@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cf3loh6mylmdl"]
+
+[node name="Options" type="Node2D" unique_id=1330966763]
+
+[node name="Control" type="Control" parent="." unique_id=626405021]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="." unique_id=856969087]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "OPTIONS"

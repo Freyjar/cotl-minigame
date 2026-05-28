@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dl4f3d3qg7htd"]
+
+[node name="Game" type="Node2D" unique_id=1590812212]
+
+[node name="Label" type="Label" parent="." unique_id=1525516143]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "GAME"
