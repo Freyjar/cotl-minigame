@@ -1,13 +1,17 @@
 [gd_scene format=3 uid="uid://dl4f3d3qg7htd"]
 
+[ext_resource type="Script" uid="uid://bw0fvh3nuro3e" path="res://Scenes/mainController.gd" id="1_iukft"]
+
 [node name="Game" type="Node2D" unique_id=1590812212]
 
 [node name="Control" type="Control" parent="." unique_id=58521286]
 layout_mode = 3
+anchors_preset = 0
 offset_right = 1155.0
 offset_bottom = 643.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_iukft")
 
 [node name="PlayerTable" type="GridContainer" parent="Control" unique_id=1695570530]
 layout_mode = 0
@@ -25,7 +29,7 @@ text = "P_Row1Col1"
 layout_mode = 2
 text = "P_Row1Col2"
 
-[node name="Player_R1C3" type="Label" parent="Control/PlayerTable" unique_id=2144297219 groups=["Player_Col3"]]
+[node name="Player_R1C3" type="Label" parent="Control/PlayerTable" unique_id=2144297219]
 layout_mode = 2
 text = "P_Row1Col3"
 
@@ -136,3 +140,39 @@ text = "E_Row3Col2"
 [node name="Enemy_R3C3" type="Label" parent="Control/EnemyTable" unique_id=553691791 groups=["Enemy_Col3"]]
 layout_mode = 2
 text = "E_Row3Col3"
+
+[node name="Button" type="Button" parent="Control" unique_id=404908436]
+layout_mode = 0
+offset_left = 311.0
+offset_top = 414.00003
+offset_right = 400.0
+offset_bottom = 445.00003
+scale = Vector2(0.9217721, 0.86683697)
+text = "Column 1"
+
+[node name="Button2" type="Button" parent="Control" unique_id=1239256387]
+layout_mode = 0
+offset_left = 444.00006
+offset_top = 413.0
+offset_right = 533.00006
+offset_bottom = 444.0
+scale = Vector2(0.9217721, 0.86683697)
+text = "Column 2"
+
+[node name="Button3" type="Button" parent="Control" unique_id=1452217531]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 414.0
+offset_right = 665.0
+offset_bottom = 445.0
+scale = Vector2(0.9217721, 0.86683697)
+text = "Column 3"
+
+[node name="ready" type="Button" parent="Control" unique_id=1786010786]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "get dice"
+
+[connection signal="pressed" from="Control/Button" to="Control" method="_on_Col1_pressed"]
+[connection signal="pressed" from="Control/ready" to="Control" method="_on_getdice_pressed"]
