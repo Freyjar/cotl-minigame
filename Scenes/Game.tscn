@@ -13,6 +13,22 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_iukft")
 
+[node name="playerTotal" type="Label" parent="Control" unique_id=1936128398 groups=["overall_total"]]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 462.0
+offset_right = 241.0
+offset_bottom = 485.0
+text = "player wTotal"
+
+[node name="enemyTotal" type="Label" parent="Control" unique_id=1525516143 groups=["overall_total"]]
+layout_mode = 0
+offset_left = 797.0
+offset_top = 95.0
+offset_right = 889.0
+offset_bottom = 118.0
+text = "enemyTotal"
+
 [node name="PlayerTable" type="GridContainer" parent="Control" unique_id=1695570530]
 layout_mode = 0
 offset_left = 310.0
@@ -29,7 +45,7 @@ text = "P_Row1Col1"
 layout_mode = 2
 text = "P_Row1Col2"
 
-[node name="Player_R1C3" type="Label" parent="Control/PlayerTable" unique_id=2144297219]
+[node name="Player_R1C3" type="Label" parent="Control/PlayerTable" unique_id=2144297219 groups=["Player_Col3"]]
 layout_mode = 2
 text = "P_Row1Col3"
 
@@ -57,33 +73,17 @@ text = "P_Row3Col2"
 layout_mode = 2
 text = "P_Row3Col3"
 
-[node name="Player_Col1Total" type="Label" parent="Control/PlayerTable" unique_id=1243462711]
+[node name="Player_Col1Total" type="Label" parent="Control/PlayerTable" unique_id=1243462711 groups=["column_totals"]]
 layout_mode = 2
 text = "playerTotalCol1"
 
-[node name="Player_Col2Total" type="Label" parent="Control/PlayerTable" unique_id=1497432227]
+[node name="Player_Col2Total" type="Label" parent="Control/PlayerTable" unique_id=1497432227 groups=["column_totals"]]
 layout_mode = 2
 text = "playerTotalCol2"
 
-[node name="Player_Col3Total" type="Label" parent="Control/PlayerTable" unique_id=695367292]
+[node name="Player_Col3Total" type="Label" parent="Control/PlayerTable" unique_id=695367292 groups=["column_totals"]]
 layout_mode = 2
 text = "playerTotalCol3"
-
-[node name="enemyTotal" type="Label" parent="Control" unique_id=1525516143]
-layout_mode = 0
-offset_left = 797.0
-offset_top = 95.0
-offset_right = 889.0
-offset_bottom = 118.0
-text = "enemyTotal"
-
-[node name="playerTotal" type="Label" parent="Control" unique_id=1936128398]
-layout_mode = 0
-offset_left = 136.0
-offset_top = 462.0
-offset_right = 241.0
-offset_bottom = 485.0
-text = "player wTotal"
 
 [node name="EnemyTable" type="GridContainer" parent="Control" unique_id=897679045]
 layout_mode = 0
@@ -141,7 +141,7 @@ text = "E_Row3Col2"
 layout_mode = 2
 text = "E_Row3Col3"
 
-[node name="Button" type="Button" parent="Control" unique_id=404908436]
+[node name="Column1Button" type="Button" parent="Control" unique_id=404908436]
 layout_mode = 0
 offset_left = 311.0
 offset_top = 414.00003
@@ -150,7 +150,7 @@ offset_bottom = 445.00003
 scale = Vector2(0.9217721, 0.86683697)
 text = "Column 1"
 
-[node name="Button2" type="Button" parent="Control" unique_id=1239256387]
+[node name="Column2Button" type="Button" parent="Control" unique_id=1239256387]
 layout_mode = 0
 offset_left = 444.00006
 offset_top = 413.0
@@ -159,7 +159,7 @@ offset_bottom = 444.0
 scale = Vector2(0.9217721, 0.86683697)
 text = "Column 2"
 
-[node name="Button3" type="Button" parent="Control" unique_id=1452217531]
+[node name="Column3Button" type="Button" parent="Control" unique_id=1452217531]
 layout_mode = 0
 offset_left = 576.0
 offset_top = 414.0
@@ -168,11 +168,13 @@ offset_bottom = 445.0
 scale = Vector2(0.9217721, 0.86683697)
 text = "Column 3"
 
-[node name="ready" type="Button" parent="Control" unique_id=1786010786]
+[node name="getDiceButton" type="Button" parent="Control" unique_id=1786010786]
 layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 text = "get dice"
 
-[connection signal="pressed" from="Control/Button" to="Control" method="_on_Col1_pressed"]
-[connection signal="pressed" from="Control/ready" to="Control" method="_on_getdice_pressed"]
+[connection signal="pressed" from="Control/Column1Button" to="Control" method="_on_column1_pressed"]
+[connection signal="pressed" from="Control/Column2Button" to="Control" method="_on_column2_pressed"]
+[connection signal="pressed" from="Control/Column3Button" to="Control" method="_on_column3_pressed"]
+[connection signal="pressed" from="Control/getDiceButton" to="Control" method="_on_getdice_pressed"]
