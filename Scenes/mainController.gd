@@ -21,6 +21,10 @@ extends Control
 
 @onready var dicenumber_selected = get_tree().get_nodes_in_group("dice")[0]
 
+@export_group("Player Dice")
+@export var Player_Dice_Sprites : Array[Sprite2D]
+@export_group("Enemy Dice")
+@export var Enemy_Dice_Sprites : Array[Sprite2D]
 
 var dicevalue = 0
 var haveDice = false
