@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://d4a4mwq3wqvrj"]
+
+[node name="Node2D" type="Node2D" unique_id=215759828]
+
+[node name="Control" type="Control" parent="." unique_id=536008454]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Control" unique_id=1295275690]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 29.0
+offset_right = 587.0
+offset_bottom = 328.0
+
+[node name="Label" type="Label" parent="Control/Panel" unique_id=1821458797]
+layout_mode = 0
+offset_left = 226.0
+offset_top = 112.0
+offset_right = 346.0
+offset_bottom = 175.0
+text = "RESULT"
+horizontal_alignment = 1
+vertical_alignment = 1
