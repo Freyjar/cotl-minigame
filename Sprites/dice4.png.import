@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpgsf0ijn0g3m"
-path="res://.godot/imported/UpscaledDice_White.png-28dc91420f217f305029f91112bdc269.ctex"
+uid="uid://hvt1lxm70wdq"
+path="res://.godot/imported/dice4.png-e1853769db30f0b4a143e91673fa38eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/UpscaledDice_White.png"
-dest_files=["res://.godot/imported/UpscaledDice_White.png-28dc91420f217f305029f91112bdc269.ctex"]
+source_file="res://Sprites/dice4.png"
+dest_files=["res://.godot/imported/dice4.png-e1853769db30f0b4a143e91673fa38eb.ctex"]
 
 [params]
 

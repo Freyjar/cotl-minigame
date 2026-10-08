@@ -114,9 +114,9 @@ func column_button_pressed(column, column_total_label, overall_total_label):
 			return
 			
 			
-func enemy_moves():		
-	var enemy_dice = randi_range(1, 6)
-	var columns = [
+func enemy_moves() -> void:		
+	var enemy_dice: int = randi_range(1, 6)
+	var columns: Array = [
 		[Enemy_Col1, enemyTotal_Col1],
 		[Enemy_Col2, enemyTotal_Col2],
 		[Enemy_Col3, enemyTotal_Col3]
@@ -197,18 +197,20 @@ func deleteDice(dice, opposingcolumn, opposingcolumn_total):
 		
 		
 func check_endGame(playertotal, enemytotal) -> void:
-	print("check please")
 	if all_columns_full(Player_Col1, Player_Col2, Player_Col3):
 		print("gameend player1 board full")
+		if(safe_int(playertotal) > safe_int(enemytotal)):
+			print("player wins")
+		else:
+			print("enemy wins")	
 	if all_columns_full(Enemy_Col1, Enemy_Col2, Enemy_Col3):
 		print("gameend enemy board full")		
+		if(safe_int(playertotal) > safe_int(enemytotal)):
+			print("player wins")
+		else:
+			print("enemy wins")	
 		
-	if(safe_int(playertotal) > safe_int(enemytotal)):
-		print("player wins")
-	else:
-		print("enemy wins")	
-		
-func all_columns_full(col1, col2, col3):
+func all_columns_full(col1, col2, col3) -> bool:
 	for col in col1:
 		if !col.has_meta("value"):
 			return false

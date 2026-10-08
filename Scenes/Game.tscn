@@ -1,8 +1,6 @@
 [gd_scene format=3 uid="uid://dl4f3d3qg7htd"]
 
 [ext_resource type="Script" uid="uid://bw0fvh3nuro3e" path="res://Scripts/mainController.gd" id="1_iukft"]
-[ext_resource type="Texture2D" uid="uid://2o5qw0aouv6s" path="res://Sprites/PixelDice_White.png" id="2_j5yw3"]
-[ext_resource type="Texture2D" uid="uid://dma1nfkjv3ao" path="res://Sprites/PixelDice_Pink.png" id="3_kldst"]
 
 [node name="Game" type="Node2D" unique_id=1590812212]
 
@@ -13,8 +11,8 @@ offset_left = 1.0
 offset_right = 1156.0
 offset_bottom = 643.0
 script = ExtResource("1_iukft")
-Player_Dice_Sprites = [NodePath("../Dice1"), NodePath("../Dice2"), NodePath("../Dice3"), NodePath("../Dice4"), NodePath("../Dice5"), NodePath("../Dice6")]
-Enemy_Dice_Sprites = [NodePath("../Dice_enemy1"), NodePath("../Dice_enemy2"), NodePath("../Dice_enemy3"), NodePath("../Dice_enemy4"), NodePath("../Dice_enemy5"), NodePath("../Dice_enemy6")]
+Player_Dice_Sprites = [NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath("")]
+Enemy_Dice_Sprites = [NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath("")]
 
 [node name="playerTotalLabel" type="Label" parent="Control" unique_id=295397130]
 layout_mode = 0
@@ -275,90 +273,6 @@ offset_top = 143.0
 offset_right = 318.0
 offset_bottom = 174.0
 text = "get dice"
-
-[node name="Dice1" type="Sprite2D" parent="." unique_id=1754799635]
-visible = false
-position = Vector2(559, 233)
-texture = ExtResource("2_j5yw3")
-region_enabled = true
-region_rect = Rect2(2, 1, 24, 24)
-
-[node name="Dice2" type="Sprite2D" parent="." unique_id=878612144]
-visible = false
-position = Vector2(584, 261)
-texture = ExtResource("2_j5yw3")
-region_enabled = true
-region_rect = Rect2(30, 1, 24, 24)
-
-[node name="Dice3" type="Sprite2D" parent="." unique_id=43533082]
-visible = false
-position = Vector2(608, 281)
-texture = ExtResource("2_j5yw3")
-region_enabled = true
-region_rect = Rect2(58, 2, 24, 24)
-
-[node name="Dice4" type="Sprite2D" parent="." unique_id=312588933]
-visible = false
-position = Vector2(606, 307)
-texture = ExtResource("2_j5yw3")
-region_enabled = true
-region_rect = Rect2(114, 2, 24, 24)
-
-[node name="Dice5" type="Sprite2D" parent="." unique_id=1789654325]
-visible = false
-position = Vector2(570, 293)
-texture = ExtResource("2_j5yw3")
-region_enabled = true
-region_rect = Rect2(114, 2, 24, 24)
-
-[node name="Dice6" type="Sprite2D" parent="." unique_id=596292696]
-visible = false
-position = Vector2(581, 328)
-texture = ExtResource("2_j5yw3")
-region_enabled = true
-region_rect = Rect2(142, 2, 24, 24)
-
-[node name="Dice_enemy1" type="Sprite2D" parent="." unique_id=1072442370]
-visible = false
-position = Vector2(571, 67)
-texture = ExtResource("3_kldst")
-region_enabled = true
-region_rect = Rect2(2, 1, 24, 24)
-
-[node name="Dice_enemy2" type="Sprite2D" parent="." unique_id=1469344492]
-visible = false
-position = Vector2(585, 96)
-texture = ExtResource("3_kldst")
-region_enabled = true
-region_rect = Rect2(30, 1, 24, 24)
-
-[node name="Dice_enemy3" type="Sprite2D" parent="." unique_id=1791480138]
-visible = false
-position = Vector2(599, 131)
-texture = ExtResource("3_kldst")
-region_enabled = true
-region_rect = Rect2(58, 2, 24, 24)
-
-[node name="Dice_enemy4" type="Sprite2D" parent="." unique_id=1148659080]
-visible = false
-position = Vector2(619, 190)
-texture = ExtResource("3_kldst")
-region_enabled = true
-region_rect = Rect2(114, 2, 24, 24)
-
-[node name="Dice_enemy5" type="Sprite2D" parent="." unique_id=670582280]
-visible = false
-position = Vector2(604, 162)
-texture = ExtResource("3_kldst")
-region_enabled = true
-region_rect = Rect2(114, 2, 24, 24)
-
-[node name="Dice_enemy6" type="Sprite2D" parent="." unique_id=678560987]
-visible = false
-position = Vector2(627, 221)
-texture = ExtResource("3_kldst")
-region_enabled = true
-region_rect = Rect2(142, 2, 24, 24)
 
 [node name="Label" type="Label" parent="." unique_id=8068242]
 modulate = Color(1, 0.25882354, 0, 1)

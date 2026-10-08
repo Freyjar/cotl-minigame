@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dma1nfkjv3ao"
-path="res://.godot/imported/PixelDice_Pink.png-648c108d03443d3a5e56b027d96e924d.ctex"
+uid="uid://cfq1xdnisikoq"
+path="res://.godot/imported/dice3.png-1c4f31d783545f2e5957c3134ee7b5bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/PixelDice_Pink.png"
-dest_files=["res://.godot/imported/PixelDice_Pink.png-648c108d03443d3a5e56b027d96e924d.ctex"]
+source_file="res://Sprites/dice3.png"
+dest_files=["res://.godot/imported/dice3.png-1c4f31d783545f2e5957c3134ee7b5bc.ctex"]
 
 [params]
 
