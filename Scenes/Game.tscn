@@ -1,333 +1,316 @@
 [gd_scene format=3 uid="uid://dl4f3d3qg7htd"]
 
+[ext_resource type="Texture2D" uid="uid://da5j8mqwqiibg" path="res://Sprites/firstdude-Sheet.png" id="1_gl6un"]
 [ext_resource type="Script" uid="uid://bw0fvh3nuro3e" path="res://Scripts/mainController.gd" id="1_iukft"]
+[ext_resource type="Texture2D" uid="uid://dpivn4ol7euvo" path="res://Sprites/dicezero.png" id="3_bf53h"]
+[ext_resource type="Texture2D" uid="uid://cnoaeueymqik7" path="res://Sprites/dice1.png" id="4_71axn"]
+[ext_resource type="Texture2D" uid="uid://cu6w31ojlqyt8" path="res://Sprites/dice2.png" id="5_dahhg"]
+[ext_resource type="Texture2D" uid="uid://cfq1xdnisikoq" path="res://Sprites/dice3.png" id="6_3so38"]
+[ext_resource type="Texture2D" uid="uid://hvt1lxm70wdq" path="res://Sprites/dice4.png" id="7_3cx6b"]
+[ext_resource type="Texture2D" uid="uid://dli6ccu706bnr" path="res://Sprites/dice5.png" id="8_wxwew"]
+[ext_resource type="Texture2D" uid="uid://bcplf1uts4vy6" path="res://Sprites/dice6.png" id="9_acvyw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5yw3"]
+atlas = ExtResource("1_gl6un")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kldst"]
+atlas = ExtResource("1_gl6un")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b2bpf"]
+atlas = ExtResource("1_gl6un")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7lihs"]
+atlas = ExtResource("1_gl6un")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8ni4d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5yw3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kldst")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b2bpf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7lihs")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
 
 [node name="Game" type="Node2D" unique_id=1590812212]
+
+[node name="EnemySprite" type="AnimatedSprite2D" parent="." unique_id=1752544505]
+texture_filter = 1
+position = Vector2(181.31253, 75)
+scale = Vector2(12.54297, 4.9999995)
+sprite_frames = SubResource("SpriteFrames_8ni4d")
+frame_progress = 0.0674558
+
+[node name="EnemyBoard" type="Node2D" parent="." unique_id=1344627128]
+position = Vector2(132, 149)
+
+[node name="Col1" type="Node2D" parent="EnemyBoard" unique_id=1832599189]
+position = Vector2(-27, 0)
+
+[node name="Enemy Col1 Slot1" type="Sprite2D" parent="EnemyBoard/Col1" unique_id=1245320823]
+modulate = Color(0.99215686, 0.5882353, 0.5764706, 1)
+scale = Vector2(2, 2)
+texture = ExtResource("3_bf53h")
+
+[node name="Enemy Col1 Slot2" type="Sprite2D" parent="EnemyBoard/Col1" unique_id=1987997929]
+modulate = Color(0.99215686, 0.5882353, 0.5764706, 1)
+scale = Vector2(2, 2)
+texture = ExtResource("3_bf53h")
+
+[node name="Enemy Col1 Slot3" type="Sprite2D" parent="EnemyBoard/Col1" unique_id=2051463300]
+modulate = Color(0.99215686, 0.5882353, 0.5764706, 1)
+scale = Vector2(2, 2)
+texture = ExtResource("3_bf53h")
+
+[node name="Col2" type="Node2D" parent="EnemyBoard" unique_id=1370472500]
+position = Vector2(40, 0)
+
+[node name="Enemy Col2 Slot1" type="Sprite2D" parent="EnemyBoard/Col2" unique_id=881712031]
+modulate = Color(0.99215686, 0.5882353, 0.5764706, 1)
+scale = Vector2(2, 2)
+texture = ExtResource("3_bf53h")
+
+[node name="Enemy Col2 Slot2" type="Sprite2D" parent="EnemyBoard/Col2" unique_id=1711861631]
+modulate = Color(0.99215686, 0.5882353, 0.5764706, 1)
+scale = Vector2(2, 2)
+texture = ExtResource("3_bf53h")
+
+[node name="Enemy Col2 Slot3" type="Sprite2D" parent="EnemyBoard/Col2" unique_id=204829439]
+modulate = Color(0.99215686, 0.5882353, 0.5764706, 1)
+scale = Vector2(2, 2)
+texture = ExtResource("3_bf53h")
+
+[node name="Col3" type="Node2D" parent="EnemyBoard" unique_id=1178118653]
+position = Vector2(111, 0)
+
+[node name="Enemy Col3 Slot1" type="Sprite2D" parent="EnemyBoard/Col3" unique_id=11027711]
+modulate = Color(0.99215686, 0.5882353, 0.5764706, 1)
+scale = Vector2(2, 2)
+texture = ExtResource("3_bf53h")
+
+[node name="Enemy Col3 Slot2" type="Sprite2D" parent="EnemyBoard/Col3" unique_id=39460829]
+modulate = Color(0.99215686, 0.5882353, 0.5764706, 1)
+scale = Vector2(2, 2)
+texture = ExtResource("3_bf53h")
+
+[node name="Enemy Col3 Slot3" type="Sprite2D" parent="EnemyBoard/Col3" unique_id=792463633]
+modulate = Color(0.99215686, 0.5882353, 0.5764706, 1)
+scale = Vector2(2, 2)
+texture = ExtResource("3_bf53h")
+
+[node name="PlayerBoard" type="Node2D" parent="." unique_id=69602107]
+position = Vector2(134, 356)
+
+[node name="Col1" type="Node2D" parent="PlayerBoard" unique_id=355798187]
+position = Vector2(-30, 0)
+
+[node name="Player Col1 Slot1" type="Sprite2D" parent="PlayerBoard/Col1" unique_id=1170524089]
+scale = Vector2(2, 2)
+texture = ExtResource("3_bf53h")
+
+[node name="Player Col1 Slot2" type="Sprite2D" parent="PlayerBoard/Col1" unique_id=1573049716]
+scale = Vector2(2, 2)
+texture = ExtResource("3_bf53h")
+
+[node name="Player Col1 Slot3" type="Sprite2D" parent="PlayerBoard/Col1" unique_id=2093698918]
+scale = Vector2(2, 2)
+texture = ExtResource("3_bf53h")
+
+[node name="Col2" type="Node2D" parent="PlayerBoard" unique_id=1689821308]
+position = Vector2(38, 0)
+
+[node name="Player Col2 Slot1" type="Sprite2D" parent="PlayerBoard/Col2" unique_id=482719856]
+scale = Vector2(2, 2)
+texture = ExtResource("3_bf53h")
+
+[node name="Player Col2 Slot2" type="Sprite2D" parent="PlayerBoard/Col2" unique_id=2006041818]
+scale = Vector2(2, 2)
+texture = ExtResource("3_bf53h")
+
+[node name="Player Col2 Slot3" type="Sprite2D" parent="PlayerBoard/Col2" unique_id=1869891308]
+scale = Vector2(2, 2)
+texture = ExtResource("3_bf53h")
+
+[node name="Col3" type="Node2D" parent="PlayerBoard" unique_id=2147419295]
+position = Vector2(109, 0)
+
+[node name="Player Col3 Slot1" type="Sprite2D" parent="PlayerBoard/Col3" unique_id=2023403325]
+scale = Vector2(2, 2)
+texture = ExtResource("3_bf53h")
+
+[node name="Player Col3 Slot2" type="Sprite2D" parent="PlayerBoard/Col3" unique_id=1314797020]
+scale = Vector2(2, 2)
+texture = ExtResource("3_bf53h")
+
+[node name="Player Col3 Slot3" type="Sprite2D" parent="PlayerBoard/Col3" unique_id=1696264866]
+scale = Vector2(2, 2)
+texture = ExtResource("3_bf53h")
 
 [node name="Control" type="Control" parent="." unique_id=58521286 node_paths=PackedStringArray("Player_Dice_Sprites", "Enemy_Dice_Sprites")]
 layout_mode = 3
 anchors_preset = 0
 offset_left = 1.0
-offset_right = 1156.0
-offset_bottom = 643.0
+offset_right = 363.0
+offset_bottom = 639.0
 script = ExtResource("1_iukft")
-Player_Dice_Sprites = [NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath("")]
-Enemy_Dice_Sprites = [NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath("")]
+Player_Dice_Sprites = [NodePath("../PlayerBoard/Col1/Player Col1 Slot1"), NodePath("../PlayerBoard/Col1/Player Col1 Slot2"), NodePath("../PlayerBoard/Col1/Player Col1 Slot3"), NodePath("../PlayerBoard/Col2/Player Col2 Slot1"), NodePath("../PlayerBoard/Col2/Player Col2 Slot2"), NodePath("../PlayerBoard/Col2/Player Col2 Slot3"), NodePath("../PlayerBoard/Col3/Player Col3 Slot1"), NodePath("../PlayerBoard/Col3/Player Col3 Slot2"), NodePath("../PlayerBoard/Col3/Player Col3 Slot3")]
+Enemy_Dice_Sprites = [NodePath("../EnemyBoard/Col1/Enemy Col1 Slot1"), NodePath("../EnemyBoard/Col1/Enemy Col1 Slot2"), NodePath("../EnemyBoard/Col1/Enemy Col1 Slot3"), NodePath("../EnemyBoard/Col2/Enemy Col2 Slot1"), NodePath("../EnemyBoard/Col2/Enemy Col2 Slot2"), NodePath("../EnemyBoard/Col2/Enemy Col2 Slot3"), NodePath("../EnemyBoard/Col3/Enemy Col3 Slot1"), NodePath("../EnemyBoard/Col3/Enemy Col3 Slot2"), NodePath("../EnemyBoard/Col3/Enemy Col3 Slot3")]
+dice_faces = Array[Texture2D]([ExtResource("4_71axn"), ExtResource("5_dahhg"), ExtResource("6_3so38"), ExtResource("7_3cx6b"), ExtResource("8_wxwew"), ExtResource("9_acvyw")])
+dice_spacing = Vector2(64, 64)
 
 [node name="playerTotalLabel" type="Label" parent="Control" unique_id=295397130]
 layout_mode = 0
-offset_left = 7.0
-offset_top = 10.0
-offset_right = 105.0
-offset_bottom = 33.0
+offset_top = 542.0
+offset_right = 98.0
+offset_bottom = 565.0
 text = "Player Total:"
 
 [node name="playerTotal" type="Label" parent="Control" unique_id=1936128398 groups=["overall_total"]]
 layout_mode = 0
-offset_left = 105.0
-offset_top = 10.0
-offset_right = 210.0
-offset_bottom = 33.0
-text = "player wTotal"
+offset_left = 98.0
+offset_top = 542.0
+offset_right = 125.0
+offset_bottom = 565.0
+text = "0"
 
 [node name="diceSelected" type="Label" parent="Control" unique_id=613553547 groups=["dice"]]
 layout_mode = 0
-offset_left = 474.0
-offset_top = 148.0
-offset_right = 581.0
-offset_bottom = 171.0
+offset_left = 8.0
+offset_top = 303.0
+offset_right = 115.0
+offset_bottom = 326.0
 text = "selected Dice:"
 
 [node name="enemyTotalLabel" type="Label" parent="Control" unique_id=2071962513]
 layout_mode = 0
-offset_left = 438.0
-offset_top = 6.0
-offset_right = 536.0
-offset_bottom = 29.0
+offset_left = 16.0
+offset_top = 58.0
+offset_right = 116.0
+offset_bottom = 81.0
 text = "Enemy Total:"
 
 [node name="enemyTotal" type="Label" parent="Control" unique_id=1525516143 groups=["overall_total"]]
 layout_mode = 0
-offset_left = 539.0
-offset_top = 6.0
-offset_right = 631.0
-offset_bottom = 29.0
+offset_left = 117.0
+offset_top = 58.0
+offset_right = 209.0
+offset_bottom = 81.0
 text = "enemyTotal"
 
-[node name="PlayerTable" type="GridContainer" parent="Control" unique_id=1695570530]
+[node name="Player_Col1Total" type="Label" parent="Control" unique_id=1243462711 groups=["column_totals"]]
+custom_minimum_size = Vector2(100, 0)
 layout_mode = 0
-offset_left = 95.0
-offset_top = 182.0
-offset_right = 466.0
-offset_bottom = 286.0
-columns = 3
-
-[node name="Player_R1C1" type="Label" parent="Control/PlayerTable" unique_id=1942926210 groups=["Player_Col1"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "P_Row1Col1"
+offset_left = 54.0
+offset_top = 520.0
+offset_right = 154.0
+offset_bottom = 543.0
+text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Player_R1C2" type="Label" parent="Control/PlayerTable" unique_id=1741745514 groups=["Player_Col2"]]
+[node name="Player_Col2Total" type="Label" parent="Control" unique_id=1497432227 groups=["column_totals"]]
 custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "P_Row1Col2"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Player_R1C3" type="Label" parent="Control/PlayerTable" unique_id=2144297219 groups=["Player_Col3"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "P_Row1Col3"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Player_R2C1" type="Label" parent="Control/PlayerTable" unique_id=187846301 groups=["Player_Col1"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "P_Row2Col1"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Player_R2C2" type="Label" parent="Control/PlayerTable" unique_id=775717516 groups=["Player_Col2"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "P_Row2Col2"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Player_R2C3" type="Label" parent="Control/PlayerTable" unique_id=1201529447 groups=["Player_Col3"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "P_Row2Col3"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Player_R3C1" type="Label" parent="Control/PlayerTable" unique_id=318855811 groups=["Player_Col1"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "P_Row3Col1"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Player_R3C2" type="Label" parent="Control/PlayerTable" unique_id=673777616 groups=["Player_Col2"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "P_Row3Col2"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Player_R3C3" type="Label" parent="Control/PlayerTable" unique_id=1845691634 groups=["Player_Col3"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "P_Row3Col3"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Player_Col1Total" type="Label" parent="Control/PlayerTable" unique_id=1243462711 groups=["column_totals"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "playerTotalCol1"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Player_Col2Total" type="Label" parent="Control/PlayerTable" unique_id=1497432227 groups=["column_totals"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "playerTotalCol2"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Player_Col3Total" type="Label" parent="Control/PlayerTable" unique_id=695367292 groups=["column_totals"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "playerTotalCol3"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="EnemyTable" type="GridContainer" parent="Control" unique_id=897679045]
-custom_minimum_size = Vector2(300, 100)
 layout_mode = 0
-offset_left = 103.0
-offset_top = 33.0
-offset_right = 486.0
-offset_bottom = 137.0
-columns = 3
-
-[node name="Enemy_Col1Total" type="Label" parent="Control/EnemyTable" unique_id=1946099429 groups=["enemy_column_totals"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "enemyTotalCol1"
+offset_left = 121.0
+offset_top = 522.0
+offset_right = 221.0
+offset_bottom = 545.0
+text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Enemy_Col2Total" type="Label" parent="Control/EnemyTable" unique_id=1104136480 groups=["enemy_column_totals"]]
+[node name="Player_Col3Total" type="Label" parent="Control" unique_id=695367292 groups=["column_totals"]]
 custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "enemyTotalCol2"
+layout_mode = 0
+offset_left = 197.0
+offset_top = 518.0
+offset_right = 297.0
+offset_bottom = 541.0
+text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Enemy_Col3Total" type="Label" parent="Control/EnemyTable" unique_id=1931166156 groups=["enemy_column_totals"]]
+[node name="Enemy_Col1Total" type="Label" parent="Control" unique_id=1946099429 groups=["enemy_column_totals"]]
 custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "enemyTotalCol3"
+layout_mode = 0
+offset_left = 56.0
+offset_top = 96.0
+offset_right = 156.0
+offset_bottom = 119.0
+text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Enemy_R1C1" type="Label" parent="Control/EnemyTable" unique_id=632244195 groups=["Enemy_Col1"]]
+[node name="Enemy_Col2Total" type="Label" parent="Control" unique_id=1104136480 groups=["enemy_column_totals"]]
 custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "E_Row1Col1"
+layout_mode = 0
+offset_left = 123.0
+offset_top = 96.0
+offset_right = 223.0
+offset_bottom = 119.0
+text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Enemy_R1C2" type="Label" parent="Control/EnemyTable" unique_id=1906933158 groups=["Enemy_Col2"]]
+[node name="Enemy_Col3Total" type="Label" parent="Control" unique_id=1931166156 groups=["enemy_column_totals"]]
 custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "E_Row1Col2"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Enemy_R1C3" type="Label" parent="Control/EnemyTable" unique_id=115168544 groups=["Enemy_Col3"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "E_Row1Col3"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Enemy_R2C1" type="Label" parent="Control/EnemyTable" unique_id=1260330724 groups=["Enemy_Col1"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "E_Row2Col1"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Enemy_R2C2" type="Label" parent="Control/EnemyTable" unique_id=900006731 groups=["Enemy_Col2"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "E_Row2_Col2"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Enemy_R2C3" type="Label" parent="Control/EnemyTable" unique_id=512854369 groups=["Enemy_Col3"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "E_Row2_Col3"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Enemy_R3C1" type="Label" parent="Control/EnemyTable" unique_id=1970146556 groups=["Enemy_Col1"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "E_Row3Col1"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Enemy_R3C2" type="Label" parent="Control/EnemyTable" unique_id=987294131 groups=["Enemy_Col2"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "E_Row3_Col2"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Enemy_R3C3" type="Label" parent="Control/EnemyTable" unique_id=553691791 groups=["Enemy_Col3"]]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "E_Row3_Col3"
+layout_mode = 0
+offset_left = 195.0
+offset_top = 96.0
+offset_right = 295.0
+offset_bottom = 119.0
+text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Column1Button" type="Button" parent="Control" unique_id=404908436]
 layout_mode = 0
-offset_left = 106.00001
-offset_top = 309.0
-offset_right = 195.0
-offset_bottom = 340.0
+offset_left = 31.0
+offset_top = 565.0
+offset_right = 120.0
+offset_bottom = 596.0
 scale = Vector2(0.9217721, 0.86683697)
 text = "Column 1"
 
 [node name="Column2Button" type="Button" parent="Control" unique_id=1239256387]
 layout_mode = 0
-offset_left = 253.0
-offset_top = 313.0
-offset_right = 342.0
-offset_bottom = 344.0
+offset_left = 132.00002
+offset_top = 566.0
+offset_right = 221.00002
+offset_bottom = 597.0
 scale = Vector2(0.9217721, 0.86683697)
 text = "Column 2"
 
 [node name="Column3Button" type="Button" parent="Control" unique_id=1452217531]
 layout_mode = 0
-offset_left = 391.00003
-offset_top = 315.0
-offset_right = 480.00003
-offset_bottom = 346.0
+offset_left = 238.0
+offset_top = 565.00006
+offset_right = 327.0
+offset_bottom = 596.00006
 scale = Vector2(0.9217721, 0.86683697)
 text = "Column 3"
 
 [node name="getDiceButton" type="Button" parent="Control" unique_id=1786010786]
 layout_mode = 0
-offset_left = 249.0
-offset_top = 143.0
-offset_right = 318.0
-offset_bottom = 174.0
+offset_left = 141.0
+offset_top = 600.0
+offset_right = 210.0
+offset_bottom = 631.0
 text = "get dice"
-
-[node name="Label" type="Label" parent="." unique_id=8068242]
-modulate = Color(1, 0.25882354, 0, 1)
-offset_left = 104.0
-offset_top = 38.0
-offset_right = 492.0
-offset_bottom = 61.0
-text = "_________________________________________________________"
-
-[node name="Label2" type="Label" parent="." unique_id=248253024]
-modulate = Color(0.0054415907, 0.650359, 0, 1)
-offset_left = 88.0
-offset_top = 241.0
-offset_right = 476.0
-offset_bottom = 264.0
-text = "_________________________________________________________"
-
-[node name="Label3" type="Label" parent="." unique_id=1686359321]
-offset_left = 89.0
-offset_top = 215.0
-offset_right = 477.0
-offset_bottom = 238.0
-text = "_________________________________________________________"
-
-[node name="Label" type="Label" parent="Label3" unique_id=543679956]
-layout_mode = 0
-offset_left = 1.0
-offset_top = -26.0
-offset_right = 389.0
-offset_bottom = -3.0
-text = "_________________________________________________________"
-
-[node name="Label" type="Label" parent="Label3/Label" unique_id=1130417954]
-layout_mode = 0
-offset_left = 14.0
-offset_top = -95.0
-offset_right = 402.0
-offset_bottom = -72.0
-text = "_________________________________________________________"
-
-[node name="Label" type="Label" parent="Label3/Label/Label" unique_id=1747843183]
-layout_mode = 0
-offset_left = -2.0
-offset_top = -28.0
-offset_right = 386.0
-offset_bottom = -5.0
-text = "_________________________________________________________"
-
-[node name="Label" type="Label" parent="Label3/Label/Label/Label" unique_id=1475195584]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 55.0
-offset_right = 389.0
-offset_bottom = 78.0
-text = "_________________________________________________________"
 
 [connection signal="pressed" from="Control/Column1Button" to="Control" method="_on_column1_pressed"]
 [connection signal="pressed" from="Control/Column2Button" to="Control" method="_on_column2_pressed"]
